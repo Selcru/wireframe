@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script>
+      // Redirect all 404s back to index.html preserving the path
+      var path = window.location.pathname.replace('/wireframe', '') || '/';
+      sessionStorage.setItem('redirect', path);
+      window.location.replace('/wireframe/');
+    </script>
+  </head>
+  <body></body>
+</html>
